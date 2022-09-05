@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <div class="whole-wrapper">
+    <div class="main">
+      <nav>
+        <div class="logo">
+          Steelcraft Manufacturing
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>  
+      <script src="js/index.js"></script>
+  
+      <div class="slogan">
+        Specializing in the fabrication of stainless steel,
+        mild steel & alluminium
+      </div>
+      <div class="img-container">
+        <img src="img/male-working-with-welding-torch.jpg" alt="">
+      </div>
+      
+      <div class="contact-info">
+        <div class="tele">
+          012 345 6789
+        </div>
+        <div class="email">
+          steelcraft@gmail.com
+        </div>
+      </div>
+      
+    </div>
+    <div class="about">
+      <h1>About Us</h1>    
+      <div class="us-content">
+        <div class="left">      
+          <div class="description">
+            <p>
+              Steelcraft Manufacturing was established on the ' ' by...
+              we specialize in the fabrication of stainless steel,
+              mild steel & alluminium to provide their customers with a 
+              range of light steel fabrication services. We specialize in 
+              stainless and mild steel fabrication, security gates and panels,
+              handrails and balustrades, revolving and folding washing lines, and
+              custom builds to suit our client requirements, including custom gate 
+              design gates.
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <img src="img/iStock-525366712-e1571237677235.jpg" alt="">
+    
+        </div>
+      </div>
+      
+      
+    </div>
+    
+    <div class="what-we-do">
+      <h1>What we do</h1>
+      <div class="what-section">
+        
+        <div class="center">
+          <ul>
+            <li>-Pre cast moulds for the concrete industries.</li>
+            <li>-Hoopers and shoots</li>
+            <li>-Staircases for industrial and residential</li>
+            <li>-Balastrading for industrial and residential</li>
+            <li>-Burglar bars</li>
+            <li>-Sliding gates</li>
+            <li>-T -top and rails for the marine industry</li>
+            <li>-Fire places, custom made to clients design</li>
+            <li>Domes for  glamping camping, either Pyramid or round, 
+                they come in many shapes, we will fabricate to your needs.
+            </li>
+            <li>-Trailers</li>
+            <li>-Maintenance</li>
+          </ul>
+        </div>
+      </div>
+     
+    </div>
+    <div class="proj">   
+      <h1>Projects that we have worked on</h1>
+      <button class="see-projects">
+        See all past projects
+      </button>
+  
+      <div class="proj-container">
+        <div class="image">
+          <img src="img/drawer/drawer-1.jpg" alt="">
+        </div>
+        <div class="image">
+          <img src="img/fireplace/fire-place-1.jpg" alt="">
+        </div>
+        <div class="image">
+          <img src="img/gates/frame-1.jpg" alt="">
+        </div>
+        <div class="image">
+          <img src="img/gates/spikey-gate.jpg" alt="">
+        </div>
+        <div class="image">
+          <img src="img/trailers/trailer-1.jpg" alt="">
+        </div>
+        <div class="image">
+          <img src="img/projects/IMG-20220802-WA0048.jpg" alt="">
+        </div>
+      </div>
+      <div class="popup-image">
+        <span>&times;</span>
+        <div class="image">
+          <img src="" alt="">
+        </div>
+  
+      </div>
+    </div> 
+    <script>
+      document.querySelectorAll('.proj-container').forEach(image => {
+     image.onclick = () => {
+      document.querySelector('.popup-image').style.display ='block';
+      document.querySelector('.popup-image img').src = image.getAttribute('src')
+     } 
+      });
+      document.querySelector('.popup-image span').onclick = () => {
+          document.querySelector('.popup-image').style.display ='none';
+      }
+    </script> 
+    <div class="footer">
+      2022 Steelcraft Manufacturing Inc.
+    </div>
+
+  </div>
+  
+  
+  
+</body>
+</html>
