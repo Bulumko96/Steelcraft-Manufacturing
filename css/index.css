@@ -6,6 +6,11 @@ box-sizing: border-box;
 body {
 color: whitesmoke;
 background-color: black;
+overflow-x: hidden;
+}
+.whole-wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .main {
     min-height: 100vh;
@@ -74,6 +79,7 @@ transform: rotate(45deg) translate(-5px,-6px);
 .slogan {
 
 margin: 25px;
+padding-top: 25px;
 
 font-weight: bold;
 font-size: 38px;
@@ -98,12 +104,12 @@ width: 100%;
 height: 50px;
 }
 .about {
-    
+    margin-top: 50px;
 
     min-height: 50vh;
 }
 .about h1 {
-    margin-left: 300px;
+    margin-left: 200px;
 }
 .description {
     min-width: 100%;
@@ -156,9 +162,19 @@ height: 50px;
     line-height: 30px;
     
 }
+.title-section {
+    display: flex;
+    justify-content: space-around;
+}
 .proj {
     min-height: 100vh;
+    margin-top: 50px;
     
+    
+}
+.proj h1 {
+    margin-left: 200px;
+    margin-bottom: 50px;
 }
 .see-projects {
     height: 30px;
@@ -168,17 +184,21 @@ height: 50px;
     color: white;
     border: 2px solid white;
 }
+.see-projects:hover {
+    background-color: rgb(253, 253, 253);
+    color: black;
+}
 
 .proj-container {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    padding: 10px;
+    
 }
 .proj-container .image {
-    height: 300px;
-    width: 360px;
+    height: 200px;
+    width: 260px;
     border: 5px solid whitesmoke;
     cursor: pointer;
 }
@@ -357,4 +377,12 @@ height: 50px;
 }
 .nav-active {
     transform: translateX(0%);
+}
+.footer {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
