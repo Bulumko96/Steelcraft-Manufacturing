@@ -1,18 +1,164 @@
 <!DOCTYPE html>
 <html la0ng="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/contact.css">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("BqbrlLy72C6J3GoGk");
+    })();
+  </script>  
+  <script>
+    // listen to the form submission
+    document
+      .getElementById("myForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const serviceID = "service_4xjeyqs";
+        const templateID = "template_dzviohm";
+
+        // send the email here
+        emailjs.sendForm(serviceID, templateID, this).then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+            alert("SUCCESS!");
+          },
+          (error) => {
+            console.log("FAILED...", error);
+            alert("FAILED...", error);
+          }
+        );
+      });
+  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
 </head>
+
 <body>
+  <div class="banner">
+    <nav>
+      <div class="logo">
+        Steelcraft Manufacturing
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <script src="js/index.js"></script>
+    <h1>Contact Us</h1>
+  </div>
+  <div class="container">
 
 
+<!--AIzaSyDdB4b24Z9KKg_WpVWM7jTI3l5XwhZkv3A-->
+    <div class="form id=" myForm">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          dolorum adipisci recusandae praesentium dicta!
+        </p>
 
+        <div class="info">
+          <div class="information">
+            <span class="material-symbols-outlined">
+              map
+              </span>
+            <p>123 Suburb, Gqeberha 12345</p>
+          </div>
+          <div class="information">
+            <span class="material-symbols-outlined">
+              mail
+              </span>
+            <p>lorem@ipsum.com</p>
+          </div>
+          <div class="information">
+            <span class="material-symbols-outlined">
+              phone_in_talk
+              </span>
+            <p>123-456-789</p>
+          </div>
+        </div>
 
-    <div class="footer">
-        2022 Steelcraft Manufacturing Inc.
+        <div class="social-media">
+          <p>Connect with us :</p>
+          <div class="social-icons">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+
+        <form action="index.html" autocomplete="off">
+          <h3 class="title">Contact us</h3>
+          <label for="">Username</label>
+          <div class="input-container">
+            
+            <input type="text" id="userName" name="name" class="input" />
+            
+            <span>Username</span>
+          </div>
+          <label for="">Email</label>
+          <div class="input-container">            
+            <input type="email" id="email_id" name="email" class="input" />            
+            <span>Email</span>
+          </div>
+          <label for="">Phone</label>
+          <div class="input-container">
+            <input type="tel" id="phoneNumber" name="phone" class="input" />            
+            <span>Phone</span>
+          </div>
+          <label for="">Message</label>
+          <div class="input-container textarea">
+            <textarea name="message" id="message" class="input"></textarea>            
+            <span>Message</span>
+          </div>
+          <input type="submit" value="Send" class="btn" />
+        </form>
+      </div>
     </div>
+  </div>
+  <div class="footer">
+    2022 Steelcraft Manufacturing Inc.
+  </div>
 </body>
+
 </html>

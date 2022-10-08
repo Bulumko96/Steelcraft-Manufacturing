@@ -8,12 +8,8 @@ color: whitesmoke;
 background-color: black;
 overflow-x: hidden;
 }
-.whole-wrapper {
-    margin-left: 10%;
-    margin-right: 10%;
-}
 .main {
-    min-height: 100vh;
+    
 }
 nav {
 display: flex;
@@ -76,6 +72,10 @@ opacity: 0;
 .toggle .line3 {
 transform: rotate(45deg) translate(-5px,-6px);
 }
+.about h1,.what-we-do h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 .slogan {
 
 margin: 25px;
@@ -87,7 +87,8 @@ display: flex;
 justify-content: center;
 }
 .img-container {
-    padding: 20px;
+    min-width: 100%;
+    padding: 25px;
     display: flex;
     justify-content: center;
     
@@ -155,10 +156,14 @@ height: 50px;
     margin: 20px;
     
 }
+.center ul{
+    text-align: left;
+    list-style: none;
+}
 .center li {
+    
     font-size: 25px;
-    display: flex;
-    justify-content: center;
+    
     line-height: 30px;
     
 }
@@ -166,18 +171,23 @@ height: 50px;
     display: flex;
     justify-content: space-around;
 }
+.title-section h1 {
+    margin-left: 15px;
+}
 .proj {
     min-height: 100vh;
     margin-top: 50px;
-    
-    
-}
-.proj h1 {
-    margin-left: 200px;
     margin-bottom: 50px;
+    
+    
 }
+.title-section button {
+    margin: 20px;
+}
+
 .see-projects {
-    height: 30px;
+    
+    height: 60px;
     width: 150px;
     cursor: pointer;
     background-color: black;
@@ -280,7 +290,7 @@ height: 50px;
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 40vh;
         top: 8vh;
         background-color: black;
         display: flex;
@@ -300,14 +310,15 @@ height: 50px;
 
     .slogan {
         padding-right: 15%;
-        text-align: center;
+        min-width: 100%;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;     
 
         
     }
     .img-container {
-        padding: 20px;
-        display: flex;
-        justify-content: center;
+       
         height: 300px;
         width: 360px;
 
@@ -325,6 +336,7 @@ height: 50px;
     }
     .right {
         margin: 0;
+        padding-left: 0;
 
     }
     .about h1 {
@@ -338,13 +350,11 @@ height: 50px;
         flex-direction: column;
         
     }
-    .description {
-        
-    }
+   
     
     .description p {
         margin-left: 10%;
-        font-size: 25px ;
+        font-size: 18px ;
         width: 100%;
         
     }
@@ -369,10 +379,21 @@ height: 50px;
         margin: 16px;
         
     }
-    .center li {
-        font-size: 25px;
-    }
+    
+    .center ul, .center li {
+        margin: 0;
+        padding: 0;
 
+    }
+    .center li {
+        font-size: 18px;
+        
+    }
+    .title-section {
+        
+        display: flex;
+        justify-content: center;
+    }    
 
 }
 .nav-active {

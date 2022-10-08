@@ -48,33 +48,31 @@ height: 2px;
 background-color: whitesmoke;
 margin: 5px;
 }
-.nav-active {
-transform: translateX(0%);
-}
-@keyframes navLinkFade {
-from {
-    opacity: 0;
-    transform: translateX(50px);
 
-}
-to {
-    opacity: 1;
-    transform: translateX(0px);
-}
-}
-.toggle .line1 {
-transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2 {
-opacity: 0;
-}
-
-.toggle .line3 {
-transform: rotate(45deg) translate(-5px,-6px);
-
-}
 .banner {
     height: 100vh;
+}
+.banner h1 {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+}
+@media screen and (min-width:375px) {
+    
+    .burger {
+        margin-right: 60px;
+    }
+    
 }
 @media screen and (max-width:768px) {
     .whole-wrapper {
@@ -110,6 +108,33 @@ transform: rotate(45deg) translate(-5px,-6px);
     }
     
 }
+.nav-active {
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .line2 {
+    opacity: 0;
+    }
+    
+    .toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+    
+    }
+
 .slogan {
 
     margin: 25px;
