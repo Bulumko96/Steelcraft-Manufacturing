@@ -8,7 +8,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/contact.css">
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>
   <script type="text/javascript">
@@ -74,6 +75,12 @@
     <h1>Contact Us</h1>
   </div>
   <div class="container">
+    <div class="map-container">
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+        defer>
+      </script>
+    </div>
 
 
 <!--AIzaSyDdB4b24Z9KKg_WpVWM7jTI3l5XwhZkv3A-->
@@ -132,18 +139,18 @@
           <label for="">Username</label>
           <div class="input-container">
             
-            <input type="text" id="userName" name="name" class="input" />
+            <input type="text" id="userName" name="userName" class="input" />
             
             <span>Username</span>
           </div>
           <label for="">Email</label>
           <div class="input-container">            
-            <input type="email" id="email_id" name="email" class="input" />            
+            <input type="email" id="email_id" name="email_id" class="input" />            
             <span>Email</span>
           </div>
           <label for="">Phone</label>
           <div class="input-container">
-            <input type="tel" id="phoneNumber" name="phone" class="input" />            
+            <input type="tel" id="phoneNumber" name="phoneNumber" class="input" />            
             <span>Phone</span>
           </div>
           <label for="">Message</label>
